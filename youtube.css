@@ -1,0 +1,97 @@
+/* ===================
+Author: Satham Hussain
+Copyright 2019 satham
+Developed for youtube web app
+Swatch Colors
+#f5f5f5 -- Smokewhite
+====================== */
+
+/* resets and overrides
+====================== */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Roboto, Oxygen-sans, Ubuntu, Cantarell, "Helvitica Neue", sans-serif !important;
+}
+
+body * {
+	font-family: Roboto, Oxygen-sans, Ubuntu, Cantarell, "Helvitica Neue", sans-serif !important;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/* Link and type
+================ */
+a:hover, a:active, a:visited, a:link {text-decoration: none;}
+
+a, span {display: inline-block;}
+
+/*==========
+main layouts
+==========*/
+header {
+	position: fixed;
+	top: 0;
+	background: #ffffff;
+	height: 44px;
+	width: 100%;
+	z-index: 100;
+}
+
+aside {
+	position: fixed;
+	top: 44px;
+	height: 100%;
+	width: 16.66%;
+	box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+	background: #f5f5f5;
+}
+
+section {
+	position: relative;
+	top: 44px;
+	left: 16.66%;
+	width: 83.33%;
+	z-index: 100;
+	padding-bottom: 40px;
+	box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+	background: #fbfbfb;
+}
+
+footer {
+	position: fixed;
+	width: 100%;
+	height: 44px;
+	bottom: 0;
+	background: blue;
+}
+
+/* secondary layout
+=================== */
+[class=*="col-"] {
+	width: 100%;
+}
+
+header nav ul, header nav ul li {
+	height: 44px;
+}
+
+header nav ul li {
+	display: flex;
+	align-items: center;
+	float: left;
+}
+
+header nav ul li:first-child svg {
+	height: 20px;
+	width: 20px;
+}
+
+header nav ul li:nth-child(2) svg {
+	height: 25px;
+	width: 25px;
+}
