@@ -12,7 +12,7 @@
 </head>
 <body>
 	<header>
-		<nav>
+		<nav class="desktop">
 			<ul class="col-l-2 left">
 				<li class="col-l-2">
 					<svg height="18" width="20">
@@ -68,13 +68,50 @@
 					-->
 				</li>
 				<li class="col-l-2">
-					<div>
+					<div class="user-img">
+						<img src="https://yt3.ggpht.com/a-/AAuE7mBJAxGrt_FuOMkSn2NJ43f8de4fMuPC3uu2xA=s88-c-k-c0x00ffffff-no-rj-mo">
+					</div>
+				</li>
+			</ul>
+		</nav>
+
+		<nav class="mobile">
+			<ul class="left">
+				<li>
+					<svg height="18" width="20">
+						<use xlink:href="#bars"></use>
+ 					</svg>
+				</li>
+				<li>
+					<svg height="25" width="35">
+						<use xlink:href="#play-icon"></use>
+ 					</svg>
+					<svg height="25" width="35">
+						<use xlink:href="#youtube"></use>
+ 					</svg>
+ 					<sup>IN</sup>
+				</li>
+			</ul>
+			<ul class="right">
+				<li>
+					<svg height="18" width="20">
+						<use xlink:href="#plus-square"></use>
+					</svg>
+				</li>
+				<li>
+					<svg height="18" width="20">
+						<use xlink:href="#search-icon"></use>
+					</svg>
+				</li>
+				<li>
+					<div class="user-img">
 						<img src="https://yt3.ggpht.com/a-/AAuE7mBJAxGrt_FuOMkSn2NJ43f8de4fMuPC3uu2xA=s88-c-k-c0x00ffffff-no-rj-mo">
 					</div>
 				</li>
 			</ul>
 		</nav>
 	</header>
+
 	<aside>
 		<ul class="bottom">
 			<li class="col-l-12">
@@ -136,7 +173,7 @@
 			</li>
 			<li class="col-l-12">
 				<div>
-					<img src="https://yt3.ggpht.com/a-/AAuE7mBJAxGrt_FuOMkSn2NJ43f8de4fMuPC3uu2xA=s88-c-k-c0x00ffffff-no-rj-mo">
+					<img src="https://yt3.ggpht.com/a/AGF-l7_j2_SyLErb5lh5tdl-Ra-_uuMD1JdNnU6xZg=s88-c-k-c0xffffffff-no-rj-mo">
 				</div>
 				<div>
 					<span>yuvanshankarraja</span>
@@ -201,11 +238,14 @@
 			</li>
 		</ul>
 	</aside>
+
 	<section>
 		<div class="youtube-mixes">
 	    	<div class="col-l-12">
-	            <h4>You Tube Mixes</h4>
-	            <span>Endless playlists personalized for you</span>  
+	    		<div>
+	            	<h4 class="left">You Tube Mixes</h4>
+	            	<span>Endless playlists personalized for you</span>
+	            </div>  
 	    	</div>
 	    	<div class="col-l-12">
 	    		<div class="col-l-2 left">
@@ -215,6 +255,12 @@
 	    			<div class="col-l-12">
 		            	<h5>Mix-Dharma Durai | Entha Pakkam Video Song | ....</h5>
 		        	</div>
+		        	<div class="col-l-12">
+		        		<svg height="18" width="20">
+							<use xlink:href="sprites.svg#eye"></use>
+						</svg>
+		            	<span>50M . 1 day ago</span>
+		        	</div>
 	    		</div>
 	    		<div class="col-l-2 left">
 	    			<div class="col-l-12">
@@ -223,13 +269,25 @@
 	    			<div class="col-l-12">
 		            	<h5>Mix-Sakkarakatti | Maruthani Video Song | ....</h5>
 		        	</div>
+		        	<div class="col-l-12">
+		        		<svg height="18" width="20">
+							<use xlink:href="sprites.svg#eye"></use>
+						</svg>
+		            	<span>1K . 1 day ago</span>
+		        	</div>
 	    		</div>
 	    		<div class="col-l-2 left">
 	    			<div class="col-l-12">
 	    				<img src="https://i.ytimg.com/vi/ppQPpShemEE/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLA9-rfAv5_blAFDIYUwUbIH0sF6Ow">
 	    			</div>
 	    			<div class="col-l-12">
-		            	<h5>Mix-Thenmavin Kompathu | Karutha Penne Album | ....</h5>
+		            	<h5>Mix-Thenmavin Kompathu | Karutha Penne Album | ...</h5>
+		        	</div>
+		        	<div class="col-l-12">
+		        		<svg height="18" width="20">
+							<use xlink:href="sprites.svg#eye"></use>
+						</svg>
+		            	<span>5K . 1 day ago</span>
 		        	</div>
 	    		</div>
 	    		<div class="col-l-2 left">
@@ -239,13 +297,25 @@
 	    			<div class="col-l-12">
 		            	<h5>Mix-Yuvan | Live Performance | ....</h5>
 		        	</div>
+		        	<div class="col-l-12">
+		        		<svg height="18" width="20">
+							<use xlink:href="sprites.svg#eye"></use>
+						</svg>
+		            	<span>10M . 1 day ago</span>
+		        	</div>
 	    		</div>
 	    		<div class="col-l-2 left">
 	    			<div class="col-l-12">
 	    				<img src="https://i.ytimg.com/vi/ovYSmZj85Es/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLA4-R2mtXFgGvca9IC6wQnaQL-MXQ">
 	    			</div>
 	    			<div class="col-l-12">
-		            	<h5>Mix-Madha Yaanai Koottam | Kona Kondakaari Video Song | ....</h5>
+		            	<h5>Mix-Madha Yaanai Koottam | Kona Video Song | ...</h5>
+		        	</div>
+		        	<div class="col-l-12">
+		        		<svg height="18" width="20">
+							<use xlink:href="sprites.svg#eye"></use>
+						</svg>
+		            	<span>3M . 1 day ago</span>
 		        	</div>
 	    		</div>
 	    		<div class="col-l-2 left">
@@ -255,69 +325,25 @@
 	    			<div class="col-l-12">
 		            	<h5>Mix-Lesa Lesa | Etho Ondru Video Song | ....</h5>
 		        	</div>
-	    		</div>
-		    </div>
-	    </div>
-	    <div class="youtube-mixes">
-	    	<div class="col-l-12">
-	            <h4>Village Food Factory</h4>
-	            <span>Recommended channel for you</span>   
-	    	</div>
-	    	<div class="col-l-12">
-	    		<div class="col-l-2 left">
-	    			<div class="col-l-12">
-	    				<img src="https://i.ytimg.com/vi/79e2HVpvVX8/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBqh5DdJ_dCcXSzuVj0ioQP8wSCSA">
-	    			</div>
-	    			<div class="col-l-12">
-		            	<h5>200 KG !!! FISH Kadaai Soru prepared by my Daddy...</h5>
-		        	</div>
-	    		</div>
-	    		<div class="col-l-2 left">
-	    			<div class="col-l-12">
-	    				<img src="https://i.ytimg.com/vi/SEkb8II2pkw/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLB7vtYfnGqfY8SkvUWbG8uP13es4g">
-	    			</div>
-	    			<div class="col-l-12">
-		            	<h5>MUTTON !!! Daddy prepared a MUTTON...</h5>
-		        	</div>
-	    		</div>
-	    		<div class="col-l-2 left">
-	    			<div class="col-l-12">
-	    				<img src="https://i.ytimg.com/vi/_US4Q9t-tpw/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDV2XbyvCvrbzXX6inefCihdtwgUQ">
-	    			</div>
-	    			<div class="col-l-12">
-		            	<h5>KFC Style fried FISH / DADDY / ARUMUGAM...</h5>
-		        	</div>
-	    		</div>
-	    		<div class="col-l-2 left">
-	    			<div class="col-l-12">
-	    				<img src="https://i.ytimg.com/vi/-dL-ga257T4/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDP6pbHyFW6eKoW5vjq9dd9Y1bG2Q">
-	    			</div>
-	    			<div class="col-l-12">
-		            	<h5>LEMON CHICKEN !!! Coolest lemon chicken...</h5>
-		        	</div>
-	    		</div>
-	    		<div class="col-l-2 left">
-	    			<div class="col-l-12">
-	    				<img src="https://i.ytimg.com/vi/hzcMxguP4KQ/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBrHBgc6M1DBLLa6YS6izGtNUtiPw">
-	    			</div>
-	    			<div class="col-l-12">
-		            	<h5>Goat Chest Bone Prepared by My DADDY / Village...</h5>
-		        	</div>
-	    		</div>
-	    		<div class="col-l-2 left">
-	    			<div class="col-l-12">
-	    				<img src="https://i.ytimg.com/vi/Bz9nQF2A2D8/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBLjEgjsmLOBJ-CJZ-MsmtGMGsKnw">
-	    			</div>
-	    			<div class="col-l-12">
-		            	<h5>Mutton Chops Prepared by my Daddy Arumugam...</h5>
+		        	<div class="col-l-12">
+		        		<svg height="18" width="20">
+							<use xlink:href="sprites.svg#eye"></use>
+						</svg>
+		            	<span>6M . 1 day ago</span>
 		        	</div>
 	    		</div>
 		    </div>
 	    </div>
+
 	    <div class="youtube-mixes">
-	    	<div class="col-l-12">
-	            <h4>Indian Music</h4>
-	            <span>Recommended videos for you</span> 
+	    	<div class="col-l-12 channel">
+	    		<div class="left">
+	    			<img src="https://yt3.ggpht.com/kbSu63I8-8eCnG6gfeh_k_O9eEY4OIimp9rQK18en6NUQaorXaQW4EJ8nPL-VP1KhyH0OETk-cvd_NSqFg=s88-c-k-c0x00ffffff-no-rj">
+	    		</div>
+	    		<div class="left">
+	    			<h4 class="left">Indian Music</h4>
+	    			<span>Recommended videos for you</span>
+	    		</div> 
 	    	</div>
 	    	<div class="col-l-12">
 	    		<div class="col-l-2 left">
@@ -327,6 +353,12 @@
 	    			<div class="col-l-12">
 		            	<h5>Mix-Dharma Durai | Entha Pakkam Video Song | ....</h5>
 		        	</div>
+		        	<div class="col-l-12">
+		        		<svg height="18" width="20">
+							<use xlink:href="sprites.svg#eye"></use>
+						</svg>
+		            	<span>50M . 1 day ago</span>
+		        	</div>
 	    		</div>
 	    		<div class="col-l-2 left">
 	    			<div class="col-l-12">
@@ -334,6 +366,12 @@
 	    			</div>
 	    			<div class="col-l-12">
 		            	<h5>Mix-Sakkarakatti | Maruthani Video Song | ....</h5>
+		        	</div>
+		        	<div class="col-l-12">
+		        		<svg height="18" width="20">
+							<use xlink:href="sprites.svg#eye"></use>
+						</svg>
+		            	<span>1K . 1 day ago</span>
 		        	</div>
 	    		</div>
 	    		<div class="col-l-2 left">
@@ -343,6 +381,12 @@
 	    			<div class="col-l-12">
 		            	<h5>Mix-Thenmavin Kompathu | Karutha Penne Album | ....</h5>
 		        	</div>
+		        	<div class="col-l-12">
+		        		<svg height="18" width="20">
+							<use xlink:href="sprites.svg#eye"></use>
+						</svg>
+		            	<span>5K . 1 day ago</span>
+		        	</div>
 	    		</div>
 	    		<div class="col-l-2 left">
 	    			<div class="col-l-12">
@@ -351,13 +395,25 @@
 	    			<div class="col-l-12">
 		            	<h5>Mix-Yuvan | Live Performance | ....</h5>
 		        	</div>
+		        	<div class="col-l-12">
+		        		<svg height="18" width="20">
+							<use xlink:href="sprites.svg#eye"></use>
+						</svg>
+		            	<span>10M . 1 day ago</span>
+		        	</div>
 	    		</div>
 	    		<div class="col-l-2 left">
 	    			<div class="col-l-12">
 	    				<img src="https://i.ytimg.com/vi/o6veiZTyHR0/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCZCQstOX8rOKZkXiELXL7HjcrWDg">
 	    			</div>
 	    			<div class="col-l-12">
-		            	<h5>Mix-Madha Yaanai Koottam | Kona Kondakaari Video Song | ....</h5>
+		            	<h5>Mix-Madha Yaanai Koottam | Kona Video Song | ...</h5>
+		        	</div>
+		        	<div class="col-l-12">
+		        		<svg height="18" width="20">
+							<use xlink:href="sprites.svg#eye"></use>
+						</svg>
+		            	<span>3M . 1 day ago</span>
 		        	</div>
 	    		</div>
 	    		<div class="col-l-2 left">
@@ -367,68 +423,278 @@
 	    			<div class="col-l-12">
 		            	<h5>Mix-Lesa Lesa | Etho Ondru Video Song | ....</h5>
 		        	</div>
+		        	<div class="col-l-12">
+		        		<svg height="18" width="20">
+							<use xlink:href="sprites.svg#eye"></use>
+						</svg>
+		            	<span>6M . 1 day ago</span>
+		        	</div>
 	    		</div>
 		    </div>
 	    </div>
+
 	    <div class="youtube-mixes">
-	    	<div class="col-l-12">
-	            <h4>Cinema Junction</h4>
-	            <span>Recommended channel for you</span>  
+	    	<div class="col-l-12 channel">
+	    		<div class="left">
+	    			<img src="https://yt3.ggpht.com/a/AGF-l7905nm-gIWXtkDOrh_U5d5lN9LC7G1upDh61w=s88-c-k-c0x00ffffff-no-rj">
+	    		</div>
+	    		<div class="left">
+	    			<h4 class="left">Cinema Junction</h4>
+	            	<span>Recommended channel for you</span>
+	    		</div>
 	    	</div>
 	    	<div class="col-l-12">
 	    		<div class="col-l-2 left">
 	    			<div class="col-l-12">
-	    				<img src="https://i.ytimg.com/an_webp/3KqQUoZGTyQ/mqdefault_6s.webp?du=3000&sqp=COivgOsF&rs=AOn4CLCVHUJ5H5qBQBS2o6JhmJVAhCG1MA">
+	    				<img src="https://i.ytimg.com/vi/OfsIRYeYGdY/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDJxdCMRQsJl7ODzXnHjXT1UoSnSA">
 	    			</div>
 	    			<div class="col-l-12">
-		            	<h5>Mix-Dharma Durai | Entha Pakkam Video Song | ....</h5>
+		            	<h5>Shriya & Vijay goes to resort her father Ashish | ...</h5>
+		        	</div>
+		        	<div class="col-l-12">
+		        		<svg height="18" width="20">
+							<use xlink:href="sprites.svg#eye"></use>
+						</svg>
+		            	<span>50M . 1 day ago</span>
 		        	</div>
 	    		</div>
 	    		<div class="col-l-2 left">
 	    			<div class="col-l-12">
-	    				<img src="https://i.ytimg.com/an_webp/qJ5aTzxfykY/mqdefault_6s.webp?du=3000&sqp=CJ64gOsF&rs=AOn4CLB7Y7mgvvvKkdH1oA5BlmLtBGHwdA">
+	    				<img src="https://i.ytimg.com/vi/qJ5aTzxfykY/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCFZbvv9BDdz9PlK1TyhgqrEJfb3Q">
 	    			</div>
 	    			<div class="col-l-12">
-		            	<h5>Mix-Sakkarakatti | Maruthani Video Song | ....</h5>
+		            	<h5>Vijay father meet Shirya had argument let see | ...</h5>
+		        	</div>
+		        	<div class="col-l-12">
+		        		<svg height="18" width="20">
+							<use xlink:href="sprites.svg#eye"></use>
+						</svg>
+		            	<span>5K . 1 day ago</span>
 		        	</div>
 	    		</div>
 	    		<div class="col-l-2 left">
 	    			<div class="col-l-12">
-	    				<img src="https://i.ytimg.com/an_webp/vO2lsiJYn8A/mqdefault_6s.webp?du=3000&sqp=CMDBgOsF&rs=AOn4CLB1ucOXr4Zl8Y9zx4mSiIUHfHlKow">
+	    				<img src="https://i.ytimg.com/vi/4RDtxdTxNQc/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBUpXtq625wVirOW_Mavita_1dJFg">
 	    			</div>
 	    			<div class="col-l-12">
-		            	<h5>Mix-Thenmavin Kompathu | Karutha Penne Album | ....</h5>
+		            	<h5>Vijay Run to save his family & Friends relative | ...</h5>
+		        	</div>
+		        	<div class="col-l-12">
+		        		<svg height="18" width="20">
+							<use xlink:href="sprites.svg#eye"></use>
+						</svg>
+		            	<span>1K . 1 day ago</span>
 		        	</div>
 	    		</div>
 	    		<div class="col-l-2 left">
 	    			<div class="col-l-12">
-	    				<img src="https://i.ytimg.com/an_webp/s6jqTZHZPvA/mqdefault_6s.webp?du=3000&sqp=CMDPgOsF&rs=AOn4CLCURbSIfzAzniTL4jwAug7DLL39Tw">
+	    				<img src="https://i.ytimg.com/vi/hNFfqd-wo4I/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDd_AN0xjXiXEgQHyz-jgdqkmUaMA">
 	    			</div>
 	    			<div class="col-l-12">
-		            	<h5>Mix-Yuvan | Live Performance | ....</h5>
+		            	<h5>Lets check does Sarath kumar save his father | ...</h5>
+		        	</div>
+		        	<div class="col-l-12">
+		        		<svg height="18" width="20">
+							<use xlink:href="sprites.svg#eye"></use>
+						</svg>
+		            	<span>10M . 1 day ago</span>
 		        	</div>
 	    		</div>
 	    		<div class="col-l-2 left">
 	    			<div class="col-l-12">
-	    				<img src="https://i.ytimg.com/an_webp/OHm5q49OurI/mqdefault_6s.webp?du=3000&sqp=CLy-gOsF&rs=AOn4CLDxDcBUU1f_0TOwXqpJw02ZA7Zqzg">
+	    				<img src="https://i.ytimg.com/vi/WTkRMgxRHDQ/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLB9iiphcHjc2hlstw6PK2V_9pXY0g">
 	    			</div>
 	    			<div class="col-l-12">
-		            	<h5>Mix-Madha Yaanai Koottam | Kona Kondakaari Video Song | ....</h5>
+		            	<h5>Vijay meets Namitha in train and try to ...</h5>
+		        	</div>
+		        	<div class="col-l-12">
+		        		<svg height="18" width="20">
+							<use xlink:href="sprites.svg#eye"></use>
+						</svg>
+		            	<span>50K . 1 day ago</span>
 		        	</div>
 	    		</div>
 	    		<div class="col-l-2 left">
 	    			<div class="col-l-12">
-	    				<img src="https://i.ytimg.com/an_webp/wZ5Y0yV_bgE/mqdefault_6s.webp?du=3000&sqp=CMLQgOsF&rs=AOn4CLAflpI55QenZDt7BZOCxoIjtI47cQ">
+	    				<img src="https://i.ytimg.com/vi/h6i3FiPhPXA/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDx9l83N84GzfwCxyS_0PEZoBzB2w">
 	    			</div>
 	    			<div class="col-l-12">
-		            	<h5>Mix-Lesa Lesa | Etho Ondru Video Song | ....</h5>
+		            	<h5>Check out South Traditional temple scene ....</h5>
+		        	</div>
+		        	<div class="col-l-12">
+		        		<svg height="18" width="20">
+							<use xlink:href="sprites.svg#eye"></use>
+						</svg>
+		            	<span>1.5K . 1 day ago</span>
+		        	</div>
+	    		</div>
+		    </div>
+	    </div>
+
+	    <div class="youtube-mixes">
+	    	<div class="col-l-12 channel">
+	    		<div class="left">
+	    			<img src="https://yt3.ggpht.com/a/AGF-l7_4Ahh2XSRoxNf2bhlQfdK2P7vnNA4dfEXTRQ=s88-c-k-c0x00ffffff-no-rj">
+	    		</div>
+	    		<div class="left">
+	    			<h4 class="left">Village Food Factory</h4>
+	            	<span>Recommended channel for you</span>
+	            </div>
+	    	</div>
+	    	<div class="col-l-12">
+	    		<div class="col-l-2 left">
+	    			<div class="col-l-12">
+	    				<img src="https://i.ytimg.com/vi/79e2HVpvVX8/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBqh5DdJ_dCcXSzuVj0ioQP8wSCSA">
+	    			</div>
+	    			<div class="col-l-12">
+		            	<h5>200 KG !!! FISH Kadaai Soru prepared by my Daddy...</h5>
+		        	</div>
+		        	<div class="col-l-12">
+		        		<svg height="18" width="20">
+							<use xlink:href="sprites.svg#eye"></use>
+						</svg>
+		            	<span>5K . 1 day ago</span>
+		        	</div>
+	    		</div>
+	    		<div class="col-l-2 left">
+	    			<div class="col-l-12">
+	    				<img src="https://i.ytimg.com/vi/SEkb8II2pkw/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLB7vtYfnGqfY8SkvUWbG8uP13es4g">
+	    			</div>
+	    			<div class="col-l-12">
+		            	<h5>MUTTON !!! Daddy prepared a MUTTON...</h5>
+		        	</div>
+		        	<div class="col-l-12">
+		        		<svg height="18" width="20">
+							<use xlink:href="sprites.svg#eye"></use>
+						</svg>
+		            	<span>1.5K . 1 day ago</span>
+		        	</div>
+	    		</div>
+	    		<div class="col-l-2 left">
+	    			<div class="col-l-12">
+	    				<img src="https://i.ytimg.com/vi/_US4Q9t-tpw/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDV2XbyvCvrbzXX6inefCihdtwgUQ">
+	    			</div>
+	    			<div class="col-l-12">
+		            	<h5>KFC Style fried FISH / DADDY / ARUMUGAM...</h5>
+		        	</div>
+		        	<div class="col-l-12">
+		        		<svg height="18" width="20">
+							<use xlink:href="sprites.svg#eye"></use>
+						</svg>
+		            	<span>10M . 1 day ago</span>
+		        	</div>
+	    		</div>
+	    		<div class="col-l-2 left">
+	    			<div class="col-l-12">
+	    				<img src="https://i.ytimg.com/vi/-dL-ga257T4/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDP6pbHyFW6eKoW5vjq9dd9Y1bG2Q">
+	    			</div>
+	    			<div class="col-l-12">
+		            	<h5>LEMON CHICKEN !!! Coolest lemon chicken...</h5>
+		        	</div>
+		        	<div class="col-l-12">
+		        		<svg height="18" width="20">
+							<use xlink:href="sprites.svg#eye"></use>
+						</svg>
+		            	<span>3.5M . 1 day ago</span>
+		        	</div>
+	    		</div>
+	    		<div class="col-l-2 left">
+	    			<div class="col-l-12">
+	    				<img src="https://i.ytimg.com/vi/hzcMxguP4KQ/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBrHBgc6M1DBLLa6YS6izGtNUtiPw">
+	    			</div>
+	    			<div class="col-l-12">
+		            	<h5>Goat Chest Bone Prepared by My DADDY / Village...</h5>
+		        	</div>
+		        	<div class="col-l-12">
+		        		<svg height="18" width="20">
+							<use xlink:href="sprites.svg#eye"></use>
+						</svg>
+		            	<span>3K . 1 day ago</span>
+		        	</div>
+	    		</div>
+	    		<div class="col-l-2 left">
+	    			<div class="col-l-12">
+	    				<img src="https://i.ytimg.com/vi/Bz9nQF2A2D8/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBLjEgjsmLOBJ-CJZ-MsmtGMGsKnw">
+	    			</div>
+	    			<div class="col-l-12">
+		            	<h5>Mutton Chops Prepared by my Daddy Arumugam...</h5>
+		        	</div>
+		        	<div class="col-l-12">
+		        		<svg height="18" width="20">
+							<use xlink:href="sprites.svg#eye"></use>
+						</svg>
+		            	<span>1M . 1 day ago</span>
 		        	</div>
 	    		</div>
 		    </div>
 	    </div>
 	</section>
-	<!--
-		<footer></footer>
-	-->
+	
+	<footer class="mobile">
+		<nav>
+			<ul>
+				<li class="left">
+					<div>
+						<div>
+							<svg height="18" width="20">
+								<use xlink:href="sprites.svg#home"></use>
+							</svg>
+						</div>
+						<div>
+							<span>Home</span>
+						</div>
+					</div>
+				</li>
+				<li class="left">
+					<div>
+						<div>
+							<svg height="18" width="20">
+								<use xlink:href="sprites.svg#trending"></use>
+							</svg>
+						</div>
+						<div>
+							<span>Trending</span>
+						</div>
+					</div>
+				</li>
+				<li class="left">
+					<div>
+						<div>
+							<svg height="18" width="20">
+								<use xlink:href="sprites.svg#play-icon-gray"></use>
+							</svg>
+						</div>
+						<div>
+							<span>Subscriptions</span>
+						</div>
+					</div>
+				</li>
+				<li class="left">
+					<div>
+						<div>
+							<svg height="18" width="20">
+								<use xlink:href="sprites.svg#envelope"></use>
+							</svg>
+						</div>
+						<div>
+							<span>Inbox</span>
+						</div>
+					</div>
+				</li>
+				<li class="left">
+					<div>
+						<div>
+							<svg height="18" width="20">
+								<use xlink:href="sprites.svg#library"></use>
+							</svg>
+						</div>
+						<div>
+							<span>Library</span>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</footer>
 </body>
 </html>
