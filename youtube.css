@@ -42,7 +42,7 @@ header {
 	z-index: 999;
 }
 
-aside {
+aside.large {
 	position: fixed;
 	top: 60px;
 	height: 100%;
@@ -51,8 +51,18 @@ aside {
 	background: #f5f5f5;
 }
 
-aside:hover {
+aside.large:hover {
 	overflow-y: scroll;
+}
+
+aside.small {
+	position: fixed;
+	top: 60px;
+	height: 100%;
+	width: 5%;
+	box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+	background: #f5f5f5;
+	display: none;
 }
 
 section {
@@ -65,6 +75,11 @@ section {
 	padding-left: 30px;
 	box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
 	background: #fbfbfb;
+}
+
+.enlarge {
+	left: 5%;
+	width: 95%;
 }
 
 footer {
@@ -126,7 +141,7 @@ footer {
 	.mobile {
 		display: block;
 	}
-	aside {
+	aside.large {
 		display: none;
 	}
 	section {
@@ -145,6 +160,10 @@ footer {
 	}
 	section div.youtube-mixes > div:first-child span {
 		padding: 0 !important;
+	}
+	header nav ul:nth-child(3) li:nth-child(4) .notification .notification-count, footer nav ul li:nth-child(4) .notification .notification-count {
+		top: -5px !important;
+		left: 13px !important;
 	}
 }
 
@@ -191,12 +210,16 @@ footer {
 	.mobile {
 		display: none;
 	}
-	aside {
+	aside.large {
 		display: block;
 	}
 	section {
-		width: 83.33%;
 		left: 16.66%;
+		width: 83.33%;
+		/*
+		left: 5%;
+		width: 95%;
+		*/
 		padding-left: 30px;
 	}
 	section div.youtube-mixes > div:first-child {
@@ -218,7 +241,7 @@ footer {
 	.mobile {
 		display: block;
 	}
-	aside {
+	aside.large {
 		display: none;
 	}
 	section {
@@ -238,6 +261,10 @@ footer {
 	section div.youtube-mixes > div:first-child span {
 		padding: 0 !important;
 	}
+	header nav ul:nth-child(3) li:nth-child(4) .notification .notification-count, footer nav ul li:nth-child(4) .notification .notification-count {
+		top: -5px !important;
+		left: 13px !important;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 1025px) {
@@ -247,7 +274,7 @@ footer {
 	.mobile {
 		display: none;
 	}
-	aside {
+	aside.large {
 		width: 16.66%;
 		display: block;
 	}
@@ -255,7 +282,7 @@ footer {
 		width: 83.33%;
 	}
 	section div.youtube-mixes > div:first-child {
-		display: block !important;
+		display: flex !important;
 	}
 	section div.youtube-mixes > div:first-child h4 {
 		float: left !important;
@@ -392,44 +419,59 @@ header nav:nth-child(2) ul:nth-child(2) li {
 	padding: 0 15px 0 15px;
 }
 
-aside ul li {
+aside.large ul li {
 	height: 40px;
     display: flex;
     align-items: center;
 }
 
-aside ul li:first-child {
+aside.large ul li:first-child {
 	background: #e5e5e5;
 }
 
-aside ul li svg {
+aside.large ul li svg {
 	margin: 0 20px 0 20px;
 }
 
-aside ul li span {
+aside.large ul li span {
 	font-size: 14px;
 }
 
-aside ul li.aside-head {
+aside.large ul li.aside-head {
 	color: #6b6b69;
   	height: 20px;
 }
 
-aside ul li.aside-head span {
+aside.large ul li.aside-head span {
 	font-weight: 450;
 	margin: 0 20px 0 20px;
 }
 
-aside ul li:nth-child(12) div:first-child {
+aside.large ul li:nth-child(12) div:first-child {
 	width: 20px;
     height: 18px;
     margin: 0 20px 0 20px;
 }
 
-aside ul li:nth-child(12) div:first-child img {
+aside.large ul li:nth-child(12) div:first-child img {
 	width: 20px;
     height: 18px;
     border-radius: 50%;
+}
+
+aside.small ul li {
+	height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside.small ul li > div {
+	text-align: center;
+}
+
+aside.small ul li > div div:nth-child(2) span {
+	font-size: 10px;
 }
 
 section div.youtube-mixes > div:first-child {
@@ -503,6 +545,10 @@ button {}
 
 /* mischellaneous
 ================= */
+.active {
+	color: red;
+}
+
 .left {
 	float: left;
 }

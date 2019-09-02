@@ -9,6 +9,21 @@
 	<meta name="author" content="Satham Hussain" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="youtube.css" />
+	<script type="text/javascript">
+		function collapse () {
+			var asideLarge = document.getElementById("aside-large");
+			var asideSmall = document.getElementById("aside-small");
+			if (asideSmall.style.display === "" || asideSmall.style.display === "none") {
+		      	asideSmall.style.display = "block";
+		      	asideLarge.style.display = "none";
+		      	document.getElementsByTagName("section")[0].setAttribute("class", "enlarge");
+		    } else {
+		    	asideSmall.style.display = "none";
+		    	asideLarge.style.display = "block";
+		    	document.getElementsByTagName("section")[0].setAttribute("class", "");
+		    }
+		}
+	</script>
 </head>
 <body>
 	<svg style="display: none;" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -105,7 +120,7 @@
 	<header>
 		<nav class="desktop">
 			<ul class="col-l-2 left">
-				<li class="col-l-2">
+				<li onclick="collapse();" class="col-l-2">
 					<svg height="18" width="20">
 						<use xlink:href="#bars"></use>
  					</svg>
@@ -203,7 +218,8 @@
 		</nav>
 	</header>
 
-	<aside>
+	<aside id="aside-large" class="large">
+		<!-- Large -->
 		<ul class="bottom">
 			<li class="col-l-12">
 				<svg height="18" width="20">
@@ -330,13 +346,67 @@
 		</ul>
 	</aside>
 
-	<aside class="collapse" style="display: none;">
-		<ul class="bottom">
-			<li class="col-l-12">
-				<svg height="18" width="20">
-					<use xlink:href="#home"></use>
-				</svg>
-				<span>Home</span>
+	<aside id="aside-small" class="small collapse">
+		<ul>
+			<li>
+				<div>
+					<div>
+						<svg height="18" width="20">
+							<use xlink:href="#home"></use>
+						</svg>
+					</div>
+					<div>
+						<span class="active">Home</span>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div>
+					<div>
+						<svg height="18" width="20">
+							<use xlink:href="#trending"></use>
+						</svg>
+					</div>
+					<div>
+						<span>Trending</span>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div>
+					<div>
+						<svg height="18" width="20">
+							<use xlink:href="#play-icon-gray"></use>
+						</svg>
+					</div>
+					<div>
+						<span>Subscriptions</span>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div>
+					<div>
+						<svg height="18" width="20">
+							<use xlink:href="#library"></use>
+						</svg>
+					</div>
+					<div>
+						<span>Library</span>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div>
+					<div>
+						<svg height="18" width="20">
+							<use xlink:href="#history"></use>
+						</svg>
+					</div>
+					<div>
+						<span>History</span>
+					</div>
+				</div>
 			</li>
 		</ul>
 	</aside>
